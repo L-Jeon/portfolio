@@ -1,0 +1,67 @@
+{
+   "title": "Lena Jeon | Portfolio",
+   "navbar_names": ["Home", "Menu", "Portfolio", "About", "Links"],
+   "masthead":{
+    "heading": "Lena Jeon",
+    "subheading1": "Video Game Production and Project Management",
+    "subheading2": "MS in Game Design and Development at USC"
+   },
+   "portfolio-section":{
+    "heading": "My Projects",
+    "desc": "I keep track of the games I've helped out with <a href=\"https://itch.io/c/2758870/games-ive-helped-make\">here on Itch.io (click me)</a>."
+   },
+   "about":{
+    "heading": "About",
+    "content": "Aspiring game developer: making games so I can make them for a living.<br>I lean towards project management and would like to eventually produce games.<br>I also go by \"Bluekkachi\".<br><br>Academic background: B.A. in Computer Science, Minor in Japanese from UC Berkeley (Class of 2023).<br>Currently enrolled at USC's <a href=\"https://cinema.usc.edu/interactive/index.cfm\">Game Design and Development Master's program</a> (expected graduation: 2025).<br>For inquiries, email me at: ljeon@usc.edu <br><br>All of my social media can be found down below in the Links section.<br> Generally speaking, I do not use social media. If it's not linked here, it's probably not me."
+   },
+   "links": {
+    "heading": "Links"
+   },
+   "copyright": "This site uses a modified version of the <a href=\"https://startbootstrap.com/theme/freelancer\">Freelancer</a> theme.<br>Site coded and created by me.",
+
+   "close-window": "Close Window",
+
+   "proj-daigon": {
+    "name": "Daigon Express Railway",
+    "release-info": "Released October 2022",
+    "body":"Guide the trains to their destinations! <br>Winner of <a href=\"https://itch.io/jam/bear-jams-fall-2022\">Bear Jams Fall 2022</a>.<br><br>A simple puzzle game, made for UC Berkeley's <a href=\"https://itch.io/jam/bear-jams-fall-2022\">Bear Jams Fall 2022</a>,<br>a 45-hour game jam held from October 28th to October 30th. <br>Estimated playtime of 5-10 minutes.<br><br><i>Credits: Art, UI. Was also project lead.</i>",
+    "btn1": "Play Here"
+   },
+
+   "proj-interwoven": {
+    "name": "Interwoven",
+    "release-info": "Development Ongoing - Demo Available",
+    "body": "A turn-based RPG with visual novel-style story cutscenes. The demo contains about an hour of content. Interwoven has been in development since spring 2020.<br><br>Follow an unlikely trio on their journey up to defeat the Obsidian Drake atop Anvite Mountain. Features a unique Augment Battle System, which you can utilize to create all sorts of interesting strategies.<br><br><i>Credits: Producer, Designer, Artist (pixel)</i>",
+    "btn1": "Steam Page (includes link to demo"
+   },
+
+   "proj-ghostquest":{
+    "name": "Ghost Quest:<br>The Phantom Game",
+    "release-info": "Released May 2020",
+    "body": "A bite-sized JRPG experience (~5-10 minutes).<br><br>Play as a ghost who was kicked out of your body by an evil force. Left with the power to travel between the material and spiritual world, embark on a journey to take your body back from the rude being that robbed you.<br><br> Made for UC Berkeley's Game Design and Development DeCal course. <br>(<a href=\"https://gamedesign.berkeley.edu/decal.php\">Course information</a> | <a href=\"https://decal.berkeley.edu/about/decal-program\">\"What is a DeCal?\"</a>)<br><br><i>Credits: Producer, Director, Artist, Lead Programmer, etc.</i>",
+    "btn1": "Play Here"
+   },
+
+   "proj-cs184":{
+    "name": "CS 184: Computer Graphics",
+    "release-info": "Spring 2022",
+    "body": "My project writeups from UC Berkeley's Computer Graphics course. I programmed various computer graphics-related projects, including a ray-tracer, a cloth simulator, various shaders, a triangle mesh generator, a rasterizer, and more. <br>For the class's final project, I led a team of 4 in implementing a cel shader in Unity's Universal Render Pipeline.",
+    "btn1": "See Project Write-Ups (GitHub Pages)"
+   },
+
+   "proj-straystars":{
+    "name": "Stray Stars",
+    "release-info": "Planned Release: Fall 2023",
+    "body": "A 15-20 minute top-down 2D adventure RPG made with the Godot Engine. Four people wake up in an unfamiliar setting and must work together to unravel the mysteries behind their circumstances.<br><br>Made using the Godot Engine (ver. 3.5) as a side project with a team of 8. Development spanned spring to summer 2023.<br><br><i>Credits: Director, Producer, Designer, Artist (pixel), Lead Programmer</i>",
+    "btn1": "Play Here (Coming Soon!)"
+   },
+
+   "proj-blender":{
+    "name": "3D CG with Blender",
+    "release-info": "Spring 2023",
+    "body": "Various 3D models, animations, and art I made with Blender, ranging from still renders to animated shorts. <br><br>Created while learning Blender in UC Berkeley's Art 172 course during spring 2023.",
+    "btn1": "See Gallery"
+   }
+
+   
+}
