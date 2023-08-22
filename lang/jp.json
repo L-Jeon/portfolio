@@ -24,15 +24,15 @@
     "proj-daigon": {
      "name": "DAIGON EXPRESS RAILWAY<br>（ダイゴン急行列車）",
      "release-info": "発売：10月2022年",
-     "body":"列車を行き先まで案内してくれ！<br><a href=\"https://itch.io/jam/bear-jams-fall-2022\">「Bear Jams Fall 2022」</a>で１位になりました。<br><br>45時間のゲーム作るイベント、UC Berkeleyの<a href=\"https://itch.io/jam/bear-jams-fall-2022\">「Bear Jams Fall 2022」</a>で作りました（10月28日から10月30日まで）。<br>クリアタイム：５−10分<br><br><i>スタッフロール：絵、UI。（チームリーダーでした）</i>",
+     "body":"列車を行き先まで案内してくれ！（パズル | クリアタイム：５−10分）<br><a href=\"https://itch.io/jam/bear-jams-fall-2022\">「Bear Jams Fall 2022」</a>で１位になりました。<br><br>45時間のゲーム作るイベント、UC Berkeleyの<a href=\"https://itch.io/jam/bear-jams-fall-2022\">「Bear Jams Fall 2022」</a>で作りました（10月28日から10月30日まで）。<br><br><i>スタッフロール：ドット絵画家、UI。（チームリーダーでした）</i>",
      "btn1": "PLAY"
     },
  
     "proj-interwoven": {
      "name": "Interwoven（インターウォーベン）",
      "release-info": "開発中 - 体験版がある",
-     "body": "JRPGとADV. The demo contains about an hour of content. Interwoven has been in development since spring 2020.<br><br>Follow an unlikely trio on their journey up to defeat the Obsidian Drake atop Anvite Mountain. Features a unique Augment Battle System, which you can utilize to create all sorts of interesting strategies.<br><br><i>Credits: Producer, Designer, Artist (pixel)</i>",
-     "btn1": "Steam Page (includes link to demo"
+     "body": "黒曜岩竜イトルを倒すために、アンバイト山を登る大冒険。（RPG | 体験版クリアタイム：1時間くらい）<br><br>開発は春2020年に始まりました。<br><br><i>スタッフロール：プロデューサー、ゲームデザイナー、ドット絵画家</i>",
+     "btn1": "Steam（体験版がこちらへ）"
     },
  
     "proj-ghostquest":{
