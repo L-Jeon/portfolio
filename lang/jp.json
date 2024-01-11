@@ -24,7 +24,7 @@
     "proj-daigon": {
      "name": "DAIGON EXPRESS RAILWAY<br>（ダイゴン急行列車）",
      "release-info": "発売：10月2022年",
-     "body":"列車を行き先まで案内してくれ！（パズル | クリアタイム：５−10分）<br><a href=\"https://itch.io/jam/bear-jams-fall-2022\">「Bear Jams Fall 2022」</a>で１位になりました。<br><br>45時間のゲーム作るイベント、UC Berkeleyの<a href=\"https://itch.io/jam/bear-jams-fall-2022\">「Bear Jams Fall 2022」</a>で作りました（10月28日から10月30日まで）。<br><br><i>スタッフロール：ドット絵画家、UI。（チームリーダーでした）</i>",
+     "body":"列車を行き先まで案内してくれ！（パズル | クリアタイム：5-10分）<br><a href=\"https://itch.io/jam/bear-jams-fall-2022\">「Bear Jams Fall 2022」</a>で１位になりました。<br><br>45時間のゲーム作るイベント、UC Berkeleyの<a href=\"https://itch.io/jam/bear-jams-fall-2022\">「Bear Jams Fall 2022」</a>で作りました（10月28日から10月30日まで）。<br><br><i>スタッフロール：ドット絵画家、UI。（チームリーダーでした）</i>",
      "btn1": "PLAY"
     },
  
@@ -36,31 +36,31 @@
     },
  
     "proj-ghostquest":{
-     "name": "Ghost Quest:<br>The Phantom Game",
-     "release-info": "Released May 2020",
-     "body": "A bite-sized JRPG experience (~5-10 minutes).<br><br>Play as a ghost who was kicked out of your body by an evil force. Left with the power to travel between the material and spiritual world, embark on a journey to take your body back from the rude being that robbed you.<br><br> Made for UC Berkeley's Game Design and Development DeCal course. <br>(<a href=\"https://gamedesign.berkeley.edu/decal.php\">Course information</a> | <a href=\"https://decal.berkeley.edu/about/decal-program\">\"What is a DeCal?\"</a>)<br><br><i>Credits: Producer, Director, Artist, Lead Programmer, etc.</i>",
-     "btn1": "Play Here"
+     "name": "Ghost Quest: The Phantom Game<br>（ゴストクエスト：ファントムゲーム）",
+     "release-info": "発売：5月2022年",
+     "body": "邪悪な力で体を失われたゴーストで大冒険の始まりを経験するRPG。（RPG | クリアタイム：5-10分）<br><br>カリフォルニア大学バークレー校「Game Design and Development」の「DeCal」という課程で作りました。（<a href=\"https://gamedesign.berkeley.edu/decal.php\">ホムペ</a> | <a href=\"https://decal.berkeley.edu/about/decal-program\">\"「DeCal」って何？\"</a>)<br><br><i>スタッフロール: プロデューサー、ディレクター、絵画家、リードプログラマー、など</i>",
+     "btn1": "PLAY"
     },
  
     "proj-cs184":{
-     "name": "CS 184: Computer Graphics",
-     "release-info": "Spring 2022",
+     "name": "CS 184: Computer Graphics（コンピュータグラフィックス）",
+     "release-info": "2022春",
      "body": "My project writeups from UC Berkeley's Computer Graphics course. I programmed various computer graphics-related projects, including a ray-tracer, a cloth simulator, various shaders, a triangle mesh generator, a rasterizer, and more. <br>For the class's final project, I led a team of 4 in implementing a cel shader in Unity's Universal Render Pipeline.",
      "btn1": "See Project Write-Ups (GitHub Pages)"
     },
  
     "proj-straystars":{
-     "name": "Stray Stars",
-     "release-info": "Planned Release: Fall 2023",
-     "body": "A 15-20 minute top-down 2D adventure RPG made with the Godot Engine. Four people wake up in an unfamiliar setting and must work together to unravel the mysteries behind their circumstances.<br><br>Made using the Godot Engine (ver. 3.5) as a side project with a team of 8. Development spanned spring to summer 2023.<br><br><i>Credits: Director, Producer, Designer, Artist (pixel), Lead Programmer</i>",
-     "btn1": "Play Here (Coming Soon!)"
+     "name": "Stray Stars（ストレイ・スターズ）",
+     "release-info": "2024冬",
+     "body": "ゴドーエンジンで作られたアドベンチャーRPG。見知らぬ所で四人を目が覚めて、協力しながらこの不思議な状況を突き詰めます。<br><br>（エンジン：ゴドー3.5 | チーム：八人 | 制作期間：2023春から2023夏まで",
+     "btn1": "PLAY（近刊）"
     },
  
     "proj-blender":{
-     "name": "3D CG with Blender",
-     "release-info": "Spring 2023",
-     "body": "Various 3D models, animations, and art I made with Blender, ranging from still renders to animated shorts. <br><br>Created while learning Blender in UC Berkeley's Art 172 course during spring 2023.",
-     "btn1": "See Gallery"
+     "name": "Blenderで作った色々な3D CGI",
+     "release-info": "2023春",
+     "body": "Blenderで作った色んな絵、アニメ、動画などなもの。<br><br>カリフォルニア大学バークレー校でBlenderを学べるArt 172という課程で作りました。",
+     "btn1": "見に行く"
     }
  
     
