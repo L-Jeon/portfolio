@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 	<meta name="description" content="" />
 	<meta name="author" content="" />
-	<title>Lena Jeon | Portfolio</title>
+	<title>Lena Jeon | Timeline</title>
 	<!-- Favicon-->
 	<link rel="icon" type="image" href="assets/kkachi.png" />
 	<!-- Font Awesome icons (free version)-->
@@ -43,13 +43,138 @@
 		height: 100%;
 		border: 0;
 	}
+
+	* {
+		margin: 0;
+		padding: 0;
+	}
+
+	/* Timeline Container */
+	.timeline {
+		margin: 20px auto;
+		padding: 0px;
+	}
+
+	/* Card container */
+	.card {
+		position: relative;
+		padding: 1.125rem;
+		padding-left: 3rem;
+		background: var(--secondary);
+		color: white;
+		border-radius: 0px;
+		border: 0;
+		max-width: 100%;
+	}
+
+	.vertical-line {
+		content: "";
+		position: absolute;
+		border-left: 4px solid #fff;
+		margin-left: 6px;
+		left: 30px;
+		height: 100%;
+		z-index: 1;
+		pointer-events: none;
+	}
+
+	.horizontal-style-line {
+		content: "";
+		position: relative;
+		background: var(--secondary);
+		margin-top: 4px;
+		margin-bottom: 4px;
+		width: 100%;
+		height: 8px;
+	}
+
+	.horizontal-style-line-transparent {
+		content: "";
+		position: relative;
+		margin-top: 0.5rem;
+		margin-bottom: 0.5rem;
+		width: 100%;
+		min-height: 1rem;
+	}
+
+	/* Information about the timeline */
+	.info {
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+	}
+
+	/* Title of the card */
+	.title,
+	.title-nocontent {
+		color: white;
+		position: relative;
+		margin-left: 1rem;
+	}
+
+	.title-nocontent {
+		color: gray;
+	}
+
+
+	/* Timeline dot  */
+	.title::before {
+		content: "";
+		position: absolute;
+		width: 22px;
+		height: 22px;
+		background: white;
+		border-radius: 999px;
+		top: 12px;
+		left: -43px;
+		z-index: 2;
+	}
+
+	.title-nocontent::before {
+		content: "";
+		position: absolute;
+		width: 22px;
+		height: 22px;
+		background: gray;
+		border-radius: 999px;
+		top: 12px;
+		left: -43px;
+		z-index: 2;
+	}
+
+	.portfolio .portfolio-item {
+		cursor: pointer;
+		position: relative;
+		display: block;
+		max-width: 15rem;
+		border-radius: 1rem;
+		overflow: hidden;
+	}
+
+	.game-icon {
+		position: relative;
+		display: block;
+		max-width: 15rem;
+		border-radius: 0.5rem;
+		overflow: hidden;
+	}
+
+	span {
+		display: table;
+		margin: 0 auto;
+	}
+
+	.pointer-event-none {
+		pointer-events: none;
+	}
+
 </style>
 
-<body id="page-top">
+<body id="page-top pointer-event-none" style="background-color: var(--tertiary);">
 	<!-- Navigation-->
 	<nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
 		<div class="container">
-			<a class="navbar-brand" href="#page-top">Home</a>
+			<a class="navbar-brand" href="index.html">Home</a>
 			<button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button"
 				data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive"
 				aria-expanded="false" aria-label="Toggle navigation">
@@ -59,7 +184,7 @@
 			<div class="collapse navbar-collapse" id="navbarResponsive">
 				<ul class="navbar-nav ms-auto">
 					<li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded"
-							href="timeline.html">Timeline</a></li>
+							href="#page-top">Timeline</a></li>
 					<li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded"
 							href="jp.html">(日本語)</a></li>
 				</ul>
@@ -67,152 +192,114 @@
 		</div>
 	</nav>
 	<!-- Masthead-->
-	<header class="masthead bg-primary text-white text-center">
+	<header class="masthead pb-4 bg-primary text-white text-center" style="margin-bottom: 1rem;">
 		<div class="container d-flex align-items-center flex-column">
 			<!-- Masthead Avatar Image-->
 			<!--img class="masthead-avatar mb-5" src="assets/img/avataaars.svg" alt="..." /-->
 			<!-- Masthead Heading-->
-			<h1 class="masthead-heading text-uppercase mb-4">Lena Jeon</h1>
+			<h1 class="masthead-heading text-uppercase mb-4">Timeline</h1>
 			<img src="assets/img/kkachi.svg" style="height:3em; width:auto">
-
-			<!-- Masthead Subheading-->
-			<p class="masthead-subheading font-weight-light mb-0" id="masthead-heading">Video Game Production and Design
-			</p>
-			<p class="masthead-subheading font-weight-light mb-0" id="masthead-subheading">MS in Game Design and
-				Development at USC</p>
 		</div>
 	</header>
 
 	<!-- Portfolio Section-->
-	<section class="page-section portfolio" id="portfolio">
-		<div class="container">
-			<!-- Portfolio Section Heading-->
-			<h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">My Projects</h2>
-			<br><br>
-			<p>I keep track of all the games I've helped out with <a
-					href="https://itch.io/c/2758870/games-ive-helped-make">here on Itch.io (click me)</a>.</p>
-			<br>
+	<section class="page-section portfolio p-0" id="portfolio" style="margin-top: -1.1rem; margin-bottom: -1.2rem;">
+		<div class="timeline">
+			<div class="vertical-line"></div>
 
-			<!-- Portfolio Grid Items-->
-			<div class="row justify-content-center">
-				<!-- Portfolio Item 2: Interwoven-->
-				<div class="col-md-6 col-lg-4 mb-5">
-					<div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
-						<div
-							class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-							<div class="portfolio-item-caption-content text-center text-white">
-								Interwoven
+			<div class="horizontal-style-line-transparent"></div>
+			<div class="horizontal-style-line"></div>
+			<div class="card">
+				<div class="info">
+					<h2 class="title">2022</h2>
+					<!-- Portfolio Item: Daigon-->
+					<div class="row mx-0">
+						<div class="col-sm-auto justify-items-center">
+							<div class="game-icon">
+								<img class="img-fluid" src="assets/img/portfolio/im1.png" alt="..." />
 							</div>
+							<!--data-bs-toggle="modal" data-bs-target="#portfolioModal3"-->
+
 						</div>
-						<img class="img-fluid" src="assets/img/portfolio/im2.png" alt="..." />
+						<div class="col-sm-auto">
+							<h4 class="text-uppercase mb-0">October</h4>
+							<h1 class="m-0">Daigon Express Railway</h1>
+							<div class="mb-2">
+								<span class="badge rounded-pill bg-info text-white">Puzzle</span>
+							</div>
+							<p><i>Art, UI, Project Lead</i></p>
+							<p>Made for UC Berkeley's Bear Jams, a 45-hour game jam event,
+								<br>where it won first place.
+							</p>
+							<a class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
+								<i class="fa-solid fa-ellipsis"></i>
+								Read more
+							</a>
+
+						</div>
 					</div>
-					<span class="badge rounded-pill bg-primary text-white">RPG</span>
-					<span class="badge rounded-pill bg-primary text-white">Turn-based</span>
+
 				</div>
-				<!-- Portfolio Item: Free Will-->
-				<div class="col-md-6 col-lg-4 mb-5">
-					<div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#FreeWill">
-						<div
-							class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-							<div class="portfolio-item-caption-content text-center text-white">
-								Free Will
-							</div>
-						</div>
-						<img class="img-fluid" src="assets/img/portfolio/im6.png" alt="..." />
-					</div>
-					<span class="badge rounded-pill bg-primary text-white">2D Adventure</span>
-					<span class="badge rounded-pill bg-primary text-white">RPG</span>
-					<span class="badge rounded-pill bg-primary text-white">Puzzle</span>
-				</div>
-				<!-- Portfolio Item 5: Stray Stars-->
-				<div class="col-md-6 col-lg-4 mb-5 mb-md-0">
-					<div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal5">
-						<div
-							class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-							<div class="portfolio-item-caption-content text-center text-white">
-								Stray Stars
-							</div>
-						</div>
-						<img class="img-fluid" src="assets/img/portfolio/im5.png" alt="..." />
-					</div>
-					<span class="badge rounded-pill bg-primary text-white">2D Adventure</span>
-					<span class="badge rounded-pill bg-primary text-white">RPG</span>
-				</div>
-				<!-- Portfolio Item 1: Daigon-->
-				<div class="col-md-6 col-lg-4 mb-5">
-					<div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
-						<div
-							class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-							<div class="portfolio-item-caption-content text-center text-white">
-								Daigon Express Railway
-							</div>
-						</div>
-						<img class="img-fluid" src="assets/img/portfolio/im1.png" alt="..." />
-					</div>
-					<span class="badge rounded-pill bg-primary text-white">Puzzle</span>
-				</div>
-				<!-- Portfolio Item 3: Ghost-->
-				<div class="col-md-6 col-lg-4 mb-5">
-					<div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal3">
-						<div
-							class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-							<div class="portfolio-item-caption-content text-center text-white">
-								Ghost Quest: The Phantom Game
-							</div>
-						</div>
-						<img class="img-fluid" src="assets/img/portfolio/im3.png" alt="..." />
-					</div>
-					<span class="badge rounded-pill bg-primary text-white">2D Adventure</span>
-					<span class="badge rounded-pill bg-primary text-white">RPG</span>
-					<span class="badge rounded-pill bg-primary text-white">Turn-based</span>
-				</div>
-				<!-- Portfolio Item 4: UCB CS184-->
-				<!--div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
-							<div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal4">
-								<div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-									<div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-								</div>
-								<img class="img-fluid" src="assets/img/portfolio/im4.png" alt="..." />
-							</div>
-						</div!-->
-				<!-- Portfolio Item 6-->
-				<!--div class="col-md-6 col-lg-4">
-						<div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal6">
-							<div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-								<div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-							</div>
-							<img class="img-fluid" src="assets/img/portfolio/im6.png" alt="..." />
-						</div>
-					</div-->
 			</div>
+			<div class="horizontal-style-line"></div>
+
+			<div class="horizontal-style-line-transparent"></div>
+			<div class="card" style="background-color: transparent;">
+				<div class="info">
+					<h2 class="title-nocontent">2021</h2>
+
+				</div>
+			</div>
+
+			<div class="horizontal-style-line-transparent"></div>
+			<div class="horizontal-style-line"></div>
+			<div class="card">
+				<div class="info">
+					<h2 class="title">2020</h2>
+					<!-- Portfolio Item: Ghost-->
+					<div class="row mx-0">
+						<div class="col-sm-auto justify-items-center">
+							<div class="game-icon">
+								<img class="img-fluid" src="assets/img/portfolio/im3.png" alt="..." />
+							</div>
+							<!--data-bs-toggle="modal" data-bs-target="#portfolioModal3"-->
+
+						</div>
+						<div class="col-sm-auto">
+							<h4 class="text-uppercase mb-0">May</h4>
+							<h1 class="m-0">Ghost Quest: The Phantom Game</h1>
+							<div class="mb-2">
+								<span class="badge rounded-pill bg-info text-white">2D Adventure</span>
+								<span class="badge rounded-pill bg-info text-white">RPG</span>
+								<span class="badge rounded-pill bg-info text-white">Turn-based</span>
+							</div>
+							<p style="color: darkgray"><i>Producer, Director, Artist, Lead Programmer</i></p>
+							<p>My first hands-on foray into Unity.</p>
+							<a class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#portfolioModal3">
+								<i class="fa-solid fa-ellipsis"></i>
+								Read more
+							</a>
+
+						</div>
+					</div>
+
+				</div>
+			</div>
+			<div class="horizontal-style-line"></div>
+			<div class="horizontal-style-line-transparent"></div>
 		</div>
+
 	</section>
-	<!-- About Section-->
-	<section class="page-section bg-primary text-white mb-0" id="about">
+	<!-- Bottom Section-->
+	<section class="page-section bg-primary text-white mb-0 p-4" id="about">
 		<div class="container">
-			<!-- About Section Heading-->
-			<h2 class="page-section-heading text-uppercase text-white">About</h2>
-			<br>
-			<img src="assets/img/pixel1.svg" style="height:4em; width:auto">
-			<p class="lead">
-				Making games so I can make them for a living.<br>
-				I hope to use my skills to help produce games in the gaming industry.<br>
-				I am currently based in Los Angeles.<br><br>
-				Academic background: B.A. in Computer Science, Minor in Japanese from UC Berkeley (Class of 2023).<br>
-				Currently enrolled at USC's <a href="https://cinema.usc.edu/interactive/index.cfm">Game Design and
-					Development Master's program</a> (expected graduation: 2025).<br>
-				For inquiries, email me at: bluekkachi.dev@gmail.com <br><br>
-				I also go by "Bluekkachi".
-				<br>All of my social media can be found down below in the Links section.<br>
-				Generally speaking, I do not use social media. If it's not linked here, it's probably not me.
-			</p>
-			<!-- About Section Button-->
-			<!--div class="text-center mt-4">
-					<a class="btn btn-xl btn-outline-light" href="https://startbootstrap.com/theme/freelancer/">
-						<i class="fas fa-download me-2"></i>
-						Free Download!
-					</a>
-				</div-->
+			<!-- Section Button-->
+			<div class="text-center">
+				<a class="btn btn-xl btn-outline-light" href="#page-top">
+					<i class="fa-solid fa-circle-arrow-up"></i>
+					Back to Top
+				</a>
+			</div>
 		</div>
 	</section>
 
@@ -339,7 +426,7 @@
 								</div>
 								<!-- Portfolio Modal - Image-->
 								<a href="https://store.steampowered.com/app/1890270/Interwoven">
-								<img class="img-fluid rounded mb-5" src="assets/img/interwoven_ss.jpg" alt="..." />
+									<img class="img-fluid rounded mb-5" src="assets/img/interwoven_ss.jpg" alt="..." />
 								</a>
 								<!-- Portfolio Modal - Text-->
 								<p class="mb-4">
@@ -357,12 +444,16 @@
 								</p>
 								<div class="mb-4 p-3 bg-secondary text-light">
 									<p class="mb-0">
-										<img src="assets/img/kkachi_outline.svg" class="mr-1 mb-2" width="30px"><i>As Designer…</i><br>
-										<i>Interwoven</i>'s battle system is its main draw. It was inspired by games like
-										<i>Bravely Default</i>, <i>Shin Megami Tensei</i>, and <i>Granblue Fantasy</i>, in how all three
+										<img src="assets/img/kkachi_outline.svg" class="mr-1 mb-2" width="30px"><i>As
+											Designer…</i><br>
+										<i>Interwoven</i>'s battle system is its main draw. It was inspired by games
+										like
+										<i>Bravely Default</i>, <i>Shin Megami Tensei</i>, and <i>Granblue Fantasy</i>,
+										in how all three
 										games let you play with fun buff and debuff stacking to manage your stats and
 										damage.<br><br>
-										"Fun" is the primary goal of <i>Interwoven</i>--it's a game we made for ourselves, that
+										"Fun" is the primary goal of <i>Interwoven</i>--it's a game we made for
+										ourselves, that
 										eventually grew to a product we could distribute to others. Our team all agreed
 										that there are few things more fun than going crazy with a flexible battle
 										system against challenging foes.
@@ -437,15 +528,18 @@
 								</p>
 								<div class="mb-4 p-3 bg-secondary text-light">
 									<p class="mb-0">
-										<img src="assets/img/kkachi_outline.svg" class="mr-1 mb-2" width="30px"><i>As Director…</i><br>
-										<i>Ghost Quest</i> was pitched as "a game that can be used to create other games." We
+										<img src="assets/img/kkachi_outline.svg" class="mr-1 mb-2" width="30px"><i>As
+											Director…</i><br>
+										<i>Ghost Quest</i> was pitched as "a game that can be used to create other
+										games." We
 										only had about a month to complete it, and our team was all new to Unity. Thus,
 										our main goal was to create frameworks for basic systems needed to create a
 										larger game, rather than trying to make a full-fledged RPG off the bat.<br><br>
 										I consider the project a success, as we achieved what we set out to do.
 										Additionally, the act of finishing a project successfully gave me the momentum
 										and confidence to try diving deeper into game development. Should I be drawn
-										back to the Unity engine for whatever reason, I still have <i>Ghost Quest</i>'s code
+										back to the Unity engine for whatever reason, I still have <i>Ghost Quest</i>'s
+										code
 										and basic event systems to use as a starting point.
 									</p>
 								</div>
@@ -533,7 +627,8 @@
 									<span class="badge rounded-pill bg-primary text-white">RPG</span>
 									<div class="mt-2">
 										<p>
-											<i>Credits: Director, Producer, Designer, Artist (pixel), Lead Programmer</i>
+											<i>Credits: Director, Producer, Designer, Artist (pixel), Lead
+												Programmer</i>
 										</p>
 									</div>
 								</div>
@@ -563,12 +658,20 @@
 								</p>
 								<div class="mb-4 p-3 bg-secondary text-light">
 									<p class="mb-0">
-										<img src="assets/img/kkachi_outline.svg" class="mr-1 mb-2" width="30px"><i>As Director…</i><br>
-										My primary goal with <i>Stray Stars</i> was to evoke how I feel when I finish a <i>Shin Megami Tensei</i> game. If I had to put it into words, I've described this
-										feeling as being "empty, yet full." …As you can likely tell, I'm not very good at putting that feeling into words. So I tried conveying it through this game instead. 
+										<img src="assets/img/kkachi_outline.svg" class="mr-1 mb-2" width="30px"><i>As
+											Director…</i><br>
+										My primary goal with <i>Stray Stars</i> was to evoke how I feel when I finish a
+										<i>Shin Megami Tensei</i> game. If I had to put it into words, I've described
+										this
+										feeling as being "empty, yet full." …As you can likely tell, I'm not very good
+										at putting that feeling into words. So I tried conveying it through this game
+										instead.
 										<br><br>
-										Looking back, the game's themes of uncertain truths and unverifiable 
-										circumstances were also inspired by <i>Umineko: When They Cry</i>. Similar to how <i>Umineko</i> and <i>Shin Megami Tensei</i> are to me, I will be satisfied if <i>Stray Stars</i> can also be the kind of odd game that creeps into your memory from time to time.
+										Looking back, the game's themes of uncertain truths and unverifiable
+										circumstances were also inspired by <i>Umineko: When They Cry</i>. Similar to
+										how <i>Umineko</i> and <i>Shin Megami Tensei</i> are to me, I will be satisfied
+										if <i>Stray Stars</i> can also be the kind of odd game that creeps into your
+										memory from time to time.
 									</p>
 								</div>
 								<a class="btn btn-primary" href="https://bluekkachi.itch.io/stray-stars">
@@ -636,33 +739,55 @@
 									Games department. Free Will has been in development since Summer 2023, and is
 									planned to release on Steam by the end of May 2024.
 									<br><br>
-									In producing <i>Free Will</i>, I mostly acted as the director's assistant in delegating
+									In producing <i>Free Will</i>, I mostly acted as the director's assistant in
+									delegating
 									tasks, solving production issues, and communicating across departments. In addition,
 									my role as art lead lended me a strong vision for how the game should look and feel
 									to play. My background in programming was helpful in communicating to the
 									programming team about asset implementation and general game feel.
 									<br><br>
-									As the art lead, I primarily assigned tasks to our team's 3 other artists in addition to handling all sprite animations. If it's pixel and it moves, it was drawn by me. I also mocked up and created the assets used for the game's UI windows, namely the inventory menu and battle screen.
+									As the art lead, I primarily assigned tasks to our team's 3 other artists in
+									addition to handling all sprite animations. If it's pixel and it moves, it was drawn
+									by me. I also mocked up and created the assets used for the game's UI windows,
+									namely the inventory menu and battle screen.
 								</p>
 								<div class="mb-4 p-3 bg-secondary text-light">
 									<p class="mb-0">
-										<img src="assets/img/kkachi_outline.svg" class="mr-1 mb-2" width="30px"><i>As Lead Artist…</i><br>
-										Part of the vision for <i>Free Will</i> was for it to look like it was "clearly a
+										<img src="assets/img/kkachi_outline.svg" class="mr-1 mb-2" width="30px"><i>As
+											Lead Artist…</i><br>
+										Part of the vision for <i>Free Will</i> was for it to look like it was "clearly
+										a
 										game." Thus, we shot for a retro, pixel RPG look that doubled an homage to the
-										RPG Maker games that inspired it, such as <i>Oneshot, Ib,</i> and <i>The Witch's House</i>.
+										RPG Maker games that inspired it, such as <i>Oneshot, Ib,</i> and <i>The Witch's
+											House</i>.
 										<br><br>
 										In crafting its aesthetic style, I primarily drew inspiration from <i>EarthBound
-										Zero/Beginnings, Pokémon Red and Blue</i>, and a lesser-known game called <i>Azusa 999</i>.
+											Zero/Beginnings, Pokémon Red and Blue</i>, and a lesser-known game called
+										<i>Azusa 999</i>.
 									</p>
 								</div>
 								<div class="mb-4 p-3 bg-secondary text-light">
 									<p class="mb-0">
-										<img src="assets/img/kkachi_outline.svg" class="mr-1 mb-2" width="30px"><i>As Producer…</i><br>
-										<i>Free Will</i>'s production process and execution has received high praise from the USC community. Student productions rarely ever release at the end of the spring semester, but <i>Free Will</i> is an outlier in this regard. It was the first game to be available fully on Steam out of any of the other thesis projects shown. 
+										<img src="assets/img/kkachi_outline.svg" class="mr-1 mb-2" width="30px"><i>As
+											Producer…</i><br>
+										<i>Free Will</i>'s production process and execution has received high praise
+										from the USC community. Student productions rarely ever release at the end of
+										the spring semester, but <i>Free Will</i> is an outlier in this regard. It was
+										the first game to be available fully on Steam out of any of the other thesis
+										projects shown.
 										<br><br>
-										This is largely thanks to the team, who did the tasks I assigned them as producer. That said, flexible planning played a large part in the game's successful production process. The director and I worked closely to scope the game down to about one semester's worth of work (Fall) and allocated the spring semester for polish and bleed over. As planned, the project did bleed over into spring, but even with this spillover we were able to fit in about a full month of polish. 
+										This is largely thanks to the team, who did the tasks I assigned them as
+										producer. That said, flexible planning played a large part in the game's
+										successful production process. The director and I worked closely to scope the
+										game down to about one semester's worth of work (Fall) and allocated the spring
+										semester for polish and bleed over. As planned, the project did bleed over into
+										spring, but even with this spillover we were able to fit in about a full month
+										of polish.
 										<br><br>
-										Though on release the game still had a few rough edges and a version 1.1 already in the pipeline, namely for a streamer-friendly mode due to the game's peculiarities, it being ready for release at all is considered something of a miracle as far as USC MFA projects go.
+										Though on release the game still had a few rough edges and a version 1.1 already
+										in the pipeline, namely for a streamer-friendly mode due to the game's
+										peculiarities, it being ready for release at all is considered something of a
+										miracle as far as USC MFA projects go.
 									</p>
 								</div>
 								<a class="btn btn-primary" href="https://www.freewillgame.com/">
