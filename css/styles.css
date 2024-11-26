@@ -22,7 +22,8 @@
   --secondary: #252d35;
   --tertiary: #101417;
   --success: #28a745;
-  --info: #0095e9;
+  --info: #279AF1;
+  --infohover: #73bcf5;
   --warning: #ffc107;
   --danger: #dc3545;
   --light: #f8f9fa;
@@ -166,13 +167,13 @@ sup {
 }
 
 a {
-  color: #4490ee;
+  color: var(--info);
   text-decoration: none;
   background-color: transparent;
 }
 
 a:hover {
-  color: #91b0d7;
+  color: var(--infohover);
   text-decoration: underline;
 }
 
