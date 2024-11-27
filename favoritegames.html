@@ -59,9 +59,30 @@
     margin: 0;
     background: #ffffff00;
     border-radius: 0px;
-    border: 0;
+    border: 3px solid #1e314b;
     max-width: 100%;
   }
+
+  .bg-ptb{
+    background-color: #e09f3e;
+  }
+
+  .bg-2{
+    background-color: #63c4cc;
+  }
+
+  .bg-3{
+    background-color: #bc2525;
+  }
+
+  .bg-4{
+    background-color: #4d6659;
+  }
+
+  .bg-5{
+    background-color: #1e314b;
+  }
+
 </style>
 
 <body>
@@ -88,21 +109,25 @@
   <header class="masthead pb-4 bg-primary text-white text-center" style="margin-bottom: 1rem; padding-top: 170px;">
     <div class="container d-flex align-items-center flex-column">
       <!-- Masthead Heading-->
-      <h1 class="masthead-heading text-uppercase mb-4">Games I Like</h1>
+      <h1 class="masthead-heading text-uppercase mb-4">The Battle System of…</h1>
       <img src="assets/img/kkachi.svg" style="height:3em; width:auto">
     </div>
   </header>
 
   <main>
-
+    
     <section class="text-left container">
       <div class="row py-lg-2">
         <div class="col-lg-8">
           <h1 class="fw-light">What is this?</h1>
-          <p class="lead text-muted">One of my hobbies is keeping a games journal for every game I play.
-            <br> I play a lot of games, and I thought it'd be nice to chronicle my favorites on my corner of the
-            internet.
-            <br> All art here is my own. Enjoy!
+          <p class="lead text-muted">
+            This is a series of write-ups I made about some of my favorite turn-based battle systems, compiled and written during my Fall 2024 semester at USC.
+            <br>
+            <br> In other words, this is <b> a collection of write-ups on cool JRPG battle systems.</b>
+            <br>
+            <br> Turn-based JRPGs are my favorite games to play, and these are some systems that stand out in my mind as exemplary and worth chronicling. 
+            <br> I hope to use these analyses when making games of my own, but also set out making them with the goal of sharing them with others, like you!
+            <br> All pixel art here is mine. Enjoy!
           </p>
         </div>
       </div>
@@ -111,20 +136,133 @@
     <div class="album py-5 bg-light">
       <div class="container">
 
-        <!-- Game 1 -->
+        <!-- Card - Chrono Trigger -->
         <div class="card mb-3">
-          <div class="row g-0">
+          <div class="row g-0 m-0">
+            <div class="col-md-auto" style="background-color: rgb(45, 154, 201);">
+              <img src="assets/img/chrs/cronokkachi.svg" class="img-fluid" style="object-fit: contain; height: 100%;" alt="...">
+            </div>
             <div class="card-body">
-              <div class="game-icon">
-								<img class="img-fluid" src="assets/img/chrs/SMTVMC and kkachi.svg" alt="Pixel drawing of the main character of SMT V holding a magpie" />
-							</div>
-              <h5 class="card-title"><i>Shin Megami Tensei V: Vengeance</i></h5>
+              <h5 class="card-title"><i>Chrono Trigger</i></h5>
+              <div class="mb-3">
+                <span class="badge rounded-pill text-white bg-ptb">Active Time Battle</span>
+                <span class="badge rounded-pill text-white bg-secondary">Team Attacks</span>
+                <span class="badge rounded-pill text-white bg-secondary">Timing</span>
+              </div>
               <a class="btn btn-outline-dark mb-2" data-bs-toggle="modal" data-bs-target="#portfolioModal5">
                 Read more
               </a>
             </div>
           </div>
         </div>
+
+        <!-- Card - FFX -->
+        <div class="card mb-3">
+          <div class="row g-0 m-0">
+            <div class="col-md-auto" style="background-color: rgb(220, 211, 133);">
+              <img src="assets/img/chrs/tiduskkachi.svg" class="img-fluid" style="object-fit: contain; height: 100%;" alt="...">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title"><i>Final Fantasy X</i></h5>
+              <div class="mb-3">
+                <span class="badge rounded-pill text-white bg-ptb">Charge Turn Battle</span>
+                <span class="badge rounded-pill text-white bg-2">Sphere Grid</span>
+                <span class="badge rounded-pill text-white bg-secondary">Weakness Exploitation</span>
+                <span class="badge rounded-pill text-white bg-secondary">Turn Economy</span>
+              </div>
+              <a class="btn btn-outline-dark mb-2" data-bs-toggle="modal" data-bs-target="#portfolioModal5">
+                Read more
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card - SMT VV -->
+        <div class="card mb-3">
+          <div class="row g-0 m-0">
+            <div class="col-md-auto" style="background-color: rgb(149, 46, 46);">
+              <img src="assets/img/chrs/nahobluekkachis.svg" class="img-fluid" style="object-fit: contain; height: 100%;" alt="...">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title"><i>Shin Megami Tensei V: Vengeance</i></h5>
+              <div class="mb-3">
+                <span class="badge rounded-pill text-white bg-ptb">Press Turn Battle</span>
+                <span class="badge rounded-pill text-white bg-secondary">Weakness Exploitation</span>
+                <span class="badge rounded-pill text-white bg-secondary">Turn Economy</span>
+                <span class="badge rounded-pill text-white bg-secondary">Team Building</span>
+                <span class="badge rounded-pill text-white bg-secondary">Buff Stacking</span>
+              </div>
+              <a class="btn btn-outline-dark mb-2" data-bs-toggle="modal" data-bs-target="#portfolioModal5">
+                Read more
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card - Granblue Fantasy -->
+        <div class="card mb-3">
+          <div class="row g-0 m-0">
+            <div class="col-md-auto" style="background-color: rgb(88, 165, 246);">
+              <img src="assets/img/chrs/bahakkachi.svg" class="img-fluid" style="object-fit: contain; height: 100%;" alt="...">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title"><i>Granblue Fantasy</i></h5>
+              <div class="mb-3">
+                <span class="badge rounded-pill text-white bg-ptb">Skill Cooldowns</span>
+                <span class="badge rounded-pill text-white bg-3">Weapon Grid</span>
+                <span class="badge rounded-pill text-white bg-secondary">Team Building</span>
+                <span class="badge rounded-pill text-white bg-secondary">Buff Stacking</span>
+              </div>
+              <a class="btn btn-outline-dark mb-2" data-bs-toggle="modal" data-bs-target="#portfolioModal5">
+                Read more
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card - Bravely Default -->
+        <div class="card mb-3">
+          <div class="row g-0 m-0">
+            <div class="col-md-auto" style="background-color: rgb(57, 57, 57);">
+              <img src="" class="img-fluid" style="object-fit: contain; height: 100%;" alt="...">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title"><i>Bravely Default: Flying Fairy</i></h5>
+              <div class="mb-3">
+                <span class="badge rounded-pill text-white bg-ptb">Charge Turn Battle</span>
+                <span class="badge rounded-pill text-white bg-2">Sphere Grid</span>
+                <span class="badge rounded-pill text-white bg-secondary">Weakness Exploitation</span>
+                <span class="badge rounded-pill text-white bg-secondary">Turn Economy</span>
+              </div>
+              <a class="btn btn-outline-dark mb-2" data-bs-toggle="modal" data-bs-target="#portfolioModal5">
+                Read more
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card - DeSu2 -->
+        <div class="card mb-3">
+          <div class="row g-0 m-0">
+            <div class="col-md-auto" style="background-color: rgb(89, 208, 231);">
+              <img src="assets/img/chrs/bunnykkachi.svg" class="img-fluid" style="object-fit: contain; height: 100%;" alt="...">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title"><i>Devil Survivor 2: Record Breaker</i></h5>
+              <div class="mb-3">
+                <span class="badge rounded-pill text-white bg-ptb">Charge Turn Battle</span>
+                <span class="badge rounded-pill text-white bg-2">Sphere Grid</span>
+                <span class="badge rounded-pill text-white bg-secondary">Weakness Exploitation</span>
+                <span class="badge rounded-pill text-white bg-secondary">Turn Economy</span>
+              </div>
+              <a class="btn btn-outline-dark mb-2" data-bs-toggle="modal" data-bs-target="#portfolioModal5">
+                Read more
+              </a>
+            </div>
+          </div>
+        </div>
+
+
 
       </div>
     </div>
