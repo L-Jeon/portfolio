@@ -26,7 +26,7 @@
   <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet"
     type="text/css" />
   <!-- Core theme CSS (includes Bootstrap)-->
-  <link href="css/styles.css" rel="stylesheet" />
+  <link href="../css/styles.css" rel="stylesheet" />
   <!-- STACK OVERFLOW ON DUAL LANGUAGE SUPPORT: 
 			https://stackoverflow.com/questions/46008760/how-to-build-multiple-language-website-using-pure-html-js-jquery-->
 </head>
@@ -93,7 +93,7 @@
   <!-- Navigation-->
   <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
     <div class="container">
-      <a class="navbar-brand" href="index.html">Home</a>
+      <a class="navbar-brand" href="../index.html">Home</a>
       <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button"
         data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive"
         aria-expanded="false" aria-label="Toggle navigation">
@@ -103,8 +103,10 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded"
-              href="timeline.html">Timeline</a></li>
-          <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="jp.html">(日本語)</a></li>
+              href="../timeline.html">Timeline</a></li>
+          <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded"
+            href="#page-top">JRPG Battle System Analyses</a></li>
+          <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="../jp.html">(日本語)</a></li>
         </ul>
       </div>
     </div>
@@ -122,14 +124,16 @@
     
     <section class="text-left container">
       <div class="row py-lg-2">
-        <div class="col-lg-8">
+        <div class="col-lg-9">
           <h1 class="fw-light">What is this?</h1>
           <p class="lead text-muted">
             This is a series of analyses I made about some of my favorite turn-based battle systems, compiled and written during my Fall 2024 semester at USC.
             <br>
-            <br> <span style="color: var(--primary);"><b>Turn-based JRPGs</b></span> are my favorite games to play. Below are some games' systems that stood out to me as worth chronicling for my own future reference. 
-            <br> I aimed to use these analyses as reference when making games of my own, but also set out making them with the goal of sharing them with others, like you!
-            <br> All pixel art here is mine. Enjoy!
+            <br> <span style="color: var(--primary);"><b style="font-weight: bold;">Turn-based JRPGs</b></span> are the focus and my favorite games to play. 
+            <br> I particularly wished to chronicle these specific games for my own future reference. 
+            <br> I aimed to use these analyses as reference when making games of my own, 
+            <br> but also set out making them with the goal of sharing them with others, like you!
+            <br> All pixel art here is mine. Titles are listed by the order I analyzed them in. Enjoy!
           </p>
         </div>
       </div>
@@ -145,13 +149,14 @@
               <img src="assets/img/chrs/cronokkachi.svg" class="img-fluid" style="object-fit: contain; height: 100%;" alt="...">
             </div>
             <div class="card-body">
-              <h5 class="card-title"><i>Chrono Trigger</i></h5>
+              <h5 class="card-title"><i>Chrono Trigger</i></h5> <p>Square | First released March 11, 1995 (SNES)</p>
               <div class="mb-3">
                 <span class="badge rounded-pill text-white bg-ptb">Active Time Battle</span>
                 <span class="badge rounded-pill text-white bg-2">Team Attacks</span>
                 <span class="badge rounded-pill text-white bg-3">Timing</span>
               </div>
-              <a class="btn btn-outline-dark mb-2" data-bs-toggle="modal" data-bs-target="#portfolioModal5">
+              <a class="btn btn-outline-dark mb-2" data-bs-toggle="modal" data-bs-target="#portfolioModal5"
+              href="">
                 Read more <i class="fa-solid fa-arrow-up-right-from-square"></i>
               </a>
             </div>
@@ -165,14 +170,15 @@
               <img src="assets/img/chrs/tiduskkachi.svg" class="img-fluid" style="object-fit: contain; height: 100%;" alt="...">
             </div>
             <div class="card-body">
-              <h5 class="card-title"><i>Final Fantasy X</i></h5>
+              <h5 class="card-title"><i>Final Fantasy X</i></h5> <p>Square Enix | First released July 19, 2001 (PS2)</p>
               <div class="mb-3">
                 <span class="badge rounded-pill text-white bg-ptb">Charge Turn Battle</span>
                 <span class="badge rounded-pill text-white bg-2">Sphere Grid</span><br>
                 <span class="badge rounded-pill text-white bg-secondary">Weakness Exploitation</span>
                 <span class="badge rounded-pill text-white bg-secondary">Turn Economy</span>
               </div>
-              <a class="btn btn-outline-dark mb-2" data-bs-toggle="modal" data-bs-target="#portfolioModal5">
+              <a class="btn btn-outline-dark mb-2" data-bs-toggle="modal" data-bs-target="#portfolioModal5"
+              href="">
                 Read more <i class="fa-solid fa-arrow-up-right-from-square"></i>
               </a>
             </div>
@@ -186,7 +192,7 @@
               <img src="assets/img/chrs/nahobluekkachis.svg" class="img-fluid" style="object-fit: contain; height: 100%;" alt="...">
             </div>
             <div class="card-body">
-              <h5 class="card-title"><i>Shin Megami Tensei V: Vengeance</i></h5>
+              <h5 class="card-title"><i>Shin Megami Tensei V: Vengeance</i></h5> <p>ATLUS | First released June 14, 2024 (PC, Switch, PS4, PS5)</p>
               <div class="mb-3">
                 <span class="badge rounded-pill text-white bg-ptb">Press Turn Battle</span>
                 <span class="badge rounded-pill text-white bg-2">Weakness Exploitation</span>
@@ -195,7 +201,8 @@
                 <span class="badge rounded-pill text-white bg-secondary">Buff Stacking</span>
                 <span class="badge rounded-pill text-white bg-secondary">Player/Enemy Phase</span>
               </div>
-              <a class="btn btn-outline-dark mb-2" data-bs-toggle="modal" data-bs-target="#portfolioModal5">
+              <a class="btn btn-outline-dark mb-2" data-bs-toggle="modal" data-bs-target="#portfolioModal5"
+              href="">
                 Read more <i class="fa-solid fa-arrow-up-right-from-square"></i>
               </a>
             </div>
@@ -209,7 +216,7 @@
               <img src="assets/img/chrs/bahakkachi.svg" class="img-fluid" style="object-fit: contain; height: 100%;" alt="...">
             </div>
             <div class="card-body">
-              <h5 class="card-title"><i>Granblue Fantasy</i></h5>
+              <h5 class="card-title"><i>Granblue Fantasy</i></h5> <p>Cygames | First released March 10, 2014 (iOS, Android, Web)</p>
               <div class="mb-3">
                 <span class="badge rounded-pill text-white bg-ptb">Skill Cooldowns</span>
                 <span class="badge rounded-pill text-white bg-2">Weapon Grid</span><br>
@@ -217,28 +224,8 @@
                 <span class="badge rounded-pill text-white bg-secondary">Team Building</span>
                 <span class="badge rounded-pill text-white bg-secondary">Buff Stacking</span>
               </div>
-              <a class="btn btn-outline-dark mb-2" data-bs-toggle="modal" data-bs-target="#portfolioModal5">
-                Read more <i class="fa-solid fa-arrow-up-right-from-square"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Card - Bravely Default -->
-        <div class="card mb-3 bg-white">
-          <div class="row g-0 m-0">
-            <div class="col-md-auto" style="background-color: rgb(57, 57, 57);">
-              <img src="" class="img-fluid" style="object-fit: contain; height: 100%;" alt="...">
-            </div>
-            <div class="card-body">
-              <h5 class="card-title"><i>Bravely Default</i></h5>
-              <div class="mb-3">
-                <span class="badge rounded-pill text-white bg-ptb">Traditional Turn-based Battle</span>
-                <span class="badge rounded-pill text-white bg-2">Job System</span>
-                <span class="badge rounded-pill text-white bg-3">Turn Economy</span><br>
-                <span class="badge rounded-pill text-white bg-secondary">Buff Stacking</span>
-              </div>
-              <a class="btn btn-outline-dark mb-2" data-bs-toggle="modal" data-bs-target="#portfolioModal5">
+              <a class="btn btn-outline-dark mb-2" data-bs-toggle="modal" data-bs-target="#portfolioModal5"
+              href="">
                 Read more <i class="fa-solid fa-arrow-up-right-from-square"></i>
               </a>
             </div>
@@ -248,62 +235,116 @@
         <!-- Card - DeSu2 -->
         <div class="card mb-3 bg-white">
           <div class="row g-0 m-0">
-            <div class="col-md-auto" style="background-color: rgb(89, 208, 231);">
+            <div class="col-md-auto" style="background-color: rgb(234, 103, 226);">
               <img src="assets/img/chrs/bunnykkachi.svg" class="img-fluid" style="object-fit: contain; height: 100%;" alt="...">
             </div>
             <div class="card-body">
-              <h5 class="card-title"><i>Devil Survivor 2: Record Breaker</i></h5>
+              <h5 class="card-title"><i>Devil Survivor 2: Record Breaker</i></h5> <p>ATLUS | First released July 28, 2011 (DS) as <i>Shin Megami Tensei: Devil Survivor 2</i></p>
               <div class="mb-3">
                 <span class="badge rounded-pill text-white bg-ptb">EXTRA TURN System</span>
                 <span class="badge rounded-pill text-white bg-2">Team Building</span>
                 <span class="badge rounded-pill text-white bg-3">SRPG</span><br>
                 <span class="badge rounded-pill text-white bg-secondary">Weakness Exploitation</span>
               </div>
-              <a class="btn btn-outline-dark mb-2" data-bs-toggle="modal" data-bs-target="#portfolioModal5">
+              <a class="btn btn-outline-dark mb-2" data-bs-toggle="modal" data-bs-target="#portfolioModal5"
+              href="">
                 Read more <i class="fa-solid fa-arrow-up-right-from-square"></i>
               </a>
             </div>
           </div>
         </div>
 
-        <!-- Card - Metaphor?? -->
+        <!-- Card - Bravely Default -->
+        <div class="card mb-3 bg-white">
+          <div class="row g-0 m-0">
+            <div class="col-md-auto" style="background-color: rgb(148, 133, 113);">
+              <img src="assets/img/chrs/bravelykkachi.svg" class="img-fluid" style="object-fit: contain; height: 100%;" alt="...">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title"><i>Bravely Default</i></h5> <p>Square Enix | First released October 11, 2012 (3DS) as <i>Bravely Default: Flying Fairy</i></p>
+              <div class="mb-3">
+                <span class="badge rounded-pill text-white bg-ptb">Traditional Turn-based Battle</span>
+                <span class="badge rounded-pill text-white bg-2">Job System</span>
+                <span class="badge rounded-pill text-white bg-3">Turn Economy</span><br>
+                <span class="badge rounded-pill text-white bg-secondary">Buff Stacking</span>
+              </div>
+              <a class="btn btn-outline-dark mb-2" data-bs-toggle="modal" data-bs-target="#portfolioModal5" 
+              href="">
+                Read more <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card - Template 
         <div class="card mb-3 bg-white">
           <div class="row g-0 m-0">
             <div class="col-md-auto" style="background-color: rgb(130, 130, 130);">
               <img src="assets/img/chrs/bunnykkachi.svg" class="img-fluid" style="object-fit: contain; height: 100%;" alt="...">
             </div>
             <div class="card-body">
-              <h5 class="card-title"><i>Metaphor: ReFantazio</i></h5>
+              <h5 class="card-title"><i>GameNameHere</i></h5>
               <div class="mb-3">
-                <span class="badge rounded-pill text-white bg-ptb">Press Turn Battle</span>
-                <span class="badge rounded-pill text-white bg-2">Job System</span>
-                <span class="badge rounded-pill text-white bg-3">Turn Economy</span><br>
-                <span class="badge rounded-pill text-white bg-secondary">Weakness Exploitation</span>
-                <span class="badge rounded-pill text-white bg-secondary">Team Building</span>
-                <span class="badge rounded-pill text-white bg-secondary">Buff Stacking</span>
-                <span class="badge rounded-pill text-white bg-secondary">Player/Enemy Phase</span>
+                <span class="badge rounded-pill text-white bg-ptb">BATTLE System</span>
+                <span class="badge rounded-pill text-white bg-2">SECONDARY System</span>
+                <span class="badge rounded-pill text-white bg-3">TERTIARY System</span><br>
+                <span class="badge rounded-pill text-white bg-secondary">OTHER System</span>
               </div>
               <a class="btn btn-outline-dark mb-2" data-bs-toggle="modal" data-bs-target="#portfolioModal5">
                 Coming Soon…
               </a>
             </div>
           </div>
-        </div>
+        </div> -->
 
 
 
       </div>
     </div>
 
+    <section class="text-left container" style="margin-top: 1rem;">
+      <div class="row py-lg-2">
+        <div class="col-lg-11">
+          <h1 class="fw-light">Takeaways</h1>
+          <p class="lead text-muted">
+            I seem to enjoy systems that modify themselves, or allow players to heavily modify elements in them to create a feeling of "breaking the game". 
+            <br>Most systems allowed modifying the game's turn economy.
+          </p>
+          <ul class="lead text-muted">
+            <li><i><span style="color: var(--primary);"><b style="font-weight: bold;">Chrono Trigger:</b></span></i> Dual/Triple techs (based on party) are timed to hit in concert with the ATB system</li>
+            <li><i><span style="color: var(--primary);"><b style="font-weight: bold;">Final Fantasy X:</b></span></i> Move weights in CTB affect turn queue</li>
+            <li><i><span style="color: var(--primary);"><b style="font-weight: bold;">Shin Megami Tensei V: Vengeance:</b></span></i> Attack effectiveness, passives, buffs, and actions modify the number of actions per turn and player damage dealt/received</li>
+            <li><i><span style="color: var(--primary);"><b style="font-weight: bold;">Granblue Fantasy:</b></span></i> Optimizing parties and equipment to efficiently burn through bosses</li>
+            <li><i><span style="color: var(--primary);"><b style="font-weight: bold;">Devil Survivor 2:</b></span></i> Demon passives allow traditional SRPG "rules" to be bent or broken, like teams attacking multiple times in a turn and the number of actions taken affecting turn queue</li>
+            <li><i><span style="color: var(--primary);"><b style="font-weight: bold;">Bravely Default:</b></span></i> Modifying and leveraging BP and turn economy</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
   </main>
 
-  <footer class="text-muted py-5">
-    <div class="container">
-      <p class="float-end mb-1">
-        <a href="#">Back to top</a>
-      </p>
-    </div>
-  </footer>
+	<!-- Footer-->
+	<footer class="footer text-center">
+		<div class="container">
+			<!-- Section Button-->
+			<div class="text-center">
+				<a class="btn btn-xl btn-outline-light mr-2" href="#page-top">
+					<i class="fa-solid fa-circle-arrow-up"></i>
+					Back to top
+				</a>
+				<a class="btn btn-xl btn-outline-light ml-2" href="../index.html">
+					<i class="fa-solid fa-house"></i>
+					Back to home page
+				</a>
+			</div>
+		</div>
+	</footer>
+	<!-- Copyright Section-->
+	<div class="copyright py-4 text-center text-white">
+		<div class="container"><small>This site uses a modified version of the <a
+					href="https://startbootstrap.com/theme/freelancer">Freelancer</a> theme.</small></div>
+	</div>
 
   <!-- Bootstrap core JS-->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
