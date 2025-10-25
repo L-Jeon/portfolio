@@ -508,6 +508,11 @@ mark,
   height: auto;
 }
 
+.img-fluid-small {
+  max-width: 70%;
+  height: auto;
+}
+
 .img-thumbnail {
   padding: 0.25rem;
   background-color: #fff;
